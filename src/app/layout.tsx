@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import type { Metadata } from "next";
+import Image from "next/image";
+import localFont from "next/font/local";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,9 +26,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/dfy5tmp.css" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="top-header">
+          <section>
+            <Image src="/vobi-head.png" alt="Logo" width={400} height={110} />
+            <aside>
+              <h1 className="text-4xl ian-name">Ian Kleinfeld</h1>
+              <p className="text-xl ian-tag">Professional Voice Actor</p>
+            </aside>
+          </section>
+        </header>
+        <nav className="main-menu">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
         {children}
       </body>
     </html>

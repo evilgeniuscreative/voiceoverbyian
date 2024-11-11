@@ -2,60 +2,123 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+    <div>
+      <main className="flex flex-col items-center sm:items-start">
+        <div className="hero"></div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      <section className="main-section">
+        <article className="main-left">
+          <h2 className="text-4xl font-bold">Welcome to my site!</h2>
+          <p className="text-xl">I am a professional voice actor.</p>
+          <p className="text-xl">
+            I specialize in character voices, accents, and more.
+          </p>
+        </article>
+        <article className="main-left">
+          <h2 className="text-4xl font-bold">Welcome to my site!</h2>
+          <p className="text-xl">I am a professional voice actor.</p>
+          <p className="text-xl">
+            I specialize in character voices, accents, and more.
+          </p>
+        </article>
+        <article className="main-left">
+          <h2 className="text-4xl font-bold">Welcome to my site!</h2>
+          <p className="text-xl">I am a professional voice actor.</p>
+          <p className="text-xl">
+            I specialize in character voices, accents, and more.
+          </p>
+        </article>
+      </section>
+      <section className="bottom-section text-4xl p-10 text-center">
+        Tell me what you want, and I'll make it happen!
+      </section>
+
+      <footer>
+        <p>
+          Broadcast-ready home studio with Source-Connect, Skype, Hangouts, and
+          Phone | (919) 357-6004&nbsp;
+        </p>
+        <div>
+          <div>
+            <a href="https://www.linkedin.com/in/voiceoverian/" target="_blank">
+              <Image
+                width={36}
+                height={36}
+                alt="LinkedIn VoiceByIan"
+                src="/icon-linkedin.webp"
+              />
+            </a>
+          </div>
+
+          <div>
+            <a href="https://www.instagram.com/voicebyian/" target="_blank">
+              <Image
+                width={36}
+                height={36}
+                alt="Instagram VoiceByIan"
+                src="/icon-ig.webp"
+              />
+            </a>
+          </div>
+
+          <div>
+            <a href="https://twitter.com/VoiceByIan" target="_blank">
+              <Image
+                width={36}
+                height={36}
+                alt="Twitter VoiceByIan"
+                src="/icon-twitter.webp"
+              />
+            </a>
+          </div>
+
+          <div>
+            <a href="https://www.facebook.com/voicebyian" target="_blank">
+              <Image
+                width={36}
+                height={36}
+                src="/icon-fb.webp"
+                alt="Facebook VoiceByIan"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="https://souce-connect.com/iankleinfeld">
+              <Image
+                width={203}
+                height={65}
+                src="/sourceconnectlogo.webp"
+                alt="Source Connect Standard in Studio"
+              />
+            </a>
+          </div>
+          <div>
+            <p>Voiceover is hard to get into.</p>
+            <p>
+              Our podcast interviews successful voice actors, asking
+              <em>
+                <strong>Voiceover: How Did You DO It??</strong>,
+              </em>
+              and how you can too. Listen in. It’s free!
+            </p>
+            <p>
+              <a href="http://voiceoverpodcast.com">
+                http://voiceoverpodcast.com
+              </a>
+            </p>
+          </div>
+          <div>
+            <a href="http://voiceoverpodcast.com" target="_blank">
+              <Image
+                width={630}
+                height={630}
+                alt="VoiceoverPodcast.com --answers to that question and more!"
+                src="/HowDidYouDOIt.jpg"
+              />
+            </a>
+          </div>
+        </div>
+        <a>
           <Image
             aria-hidden
             src="/file.svg"
@@ -63,11 +126,11 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Learn
+          Menu A
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -78,11 +141,11 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Examples
+          Menu B
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -93,7 +156,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          Menu C
         </a>
       </footer>
     </div>
