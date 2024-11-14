@@ -98,6 +98,7 @@ body {
 .main-section {
   align-items: center;
   background-color: var(--mainblue);
+  border: 2px solid var(--foreground);
   display: flex;
   gap: 20px;
   flex-direction: row;
@@ -112,12 +113,6 @@ body {
   border-radius: 3px;
   padding: 3rem;
 }
-.main-left {
-}
-.main-center {
-}
-.main-right {
-}
 
 .bottom-section {
   background-color: var(--green);
@@ -128,4 +123,54 @@ body {
 footer {
   color: var(--background);
   background-color: var(--foreground);
+  padding: 70px 20%;
+}
+
+footer > p {
+  font-size: 0.8rem;
+  padding-bottom: 15px;
+}
+
+footer section {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section article {
+  display: flex;
+  flex-direction: row;
+}
+
+footer section .source-connect {
+  margin-top: 20px;
+}
+
+footer section .vop-link {
+  color: rgb(204, 51, 102);
+}
+
+footer section .podcast {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+footer section .pod-text {
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+footer section .podcast-text {
+  font-size: 0.8rem;
+  max-width: 200px;
+}
+
+.icon {
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.icon:hover {
+  transform: scale(1.15) translateY(7px);
+  transition: 0.3s all;
 }

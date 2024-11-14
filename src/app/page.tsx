@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -34,130 +35,107 @@ export default function Home() {
       </section>
 
       <footer>
-        <p>
+        <p className="footer-text">
           Broadcast-ready home studio with Source-Connect, Skype, Hangouts, and
-          Phone | (919) 357-6004&nbsp;
+          Phone | <a href="19193576004">(919) 357-6004</a>
         </p>
-        <div>
-          <div>
-            <a href="https://www.linkedin.com/in/voiceoverian/" target="_blank">
-              <Image
-                width={36}
-                height={36}
-                alt="LinkedIn VoiceByIan"
-                src="/icon-linkedin.webp"
-              />
-            </a>
+        <section className="footer-flex">
+          <div className="flex pt-4 gap-4 footer-icons">
+            <div className="icon">
+              <Link
+                href="https://www.linkedin.com/in/voiceoverian/"
+                target="_blank"
+              >
+                <Image
+                  width={36}
+                  height={36}
+                  alt="LinkedIn VoiceByIan"
+                  src="/icon-linkedin.webp"
+                />
+              </Link>
+            </div>
+
+            <div className="icon">
+              <Link
+                href="https://www.instagram.com/voicebyian/"
+                target="_blank"
+              >
+                <Image
+                  width={36}
+                  height={36}
+                  alt="Instagram VoiceByIan"
+                  src="/icon-ig.webp"
+                />
+              </Link>
+            </div>
+
+            <div className="icon">
+              <Link href="https://twitter.com/VoiceByIan" target="_blank">
+                <Image
+                  width={36}
+                  height={36}
+                  alt="Twitter VoiceByIan"
+                  src="/icon-twitter.webp"
+                />
+              </Link>
+            </div>
+
+            <div className="icon">
+              <Link href="https://www.facebook.com/voicebyian" target="_blank">
+                <Image
+                  width={36}
+                  height={36}
+                  src="/icon-fb.webp"
+                  alt="Facebook VoiceByIan"
+                />
+              </Link>
+            </div>
           </div>
 
-          <div>
-            <a href="https://www.instagram.com/voicebyian/" target="_blank">
-              <Image
-                width={36}
-                height={36}
-                alt="Instagram VoiceByIan"
-                src="/icon-ig.webp"
-              />
-            </a>
-          </div>
-
-          <div>
-            <a href="https://twitter.com/VoiceByIan" target="_blank">
-              <Image
-                width={36}
-                height={36}
-                alt="Twitter VoiceByIan"
-                src="/icon-twitter.webp"
-              />
-            </a>
-          </div>
-
-          <div>
-            <a href="https://www.facebook.com/voicebyian" target="_blank">
-              <Image
-                width={36}
-                height={36}
-                src="/icon-fb.webp"
-                alt="Facebook VoiceByIan"
-              />
-            </a>
-          </div>
-          <div>
-            <a href="https://souce-connect.com/iankleinfeld">
+          {/* right side */}
+          <div className="source-connect">
+            <Link href="https://souce-connect.com/iankleinfeld">
               <Image
                 width={203}
                 height={65}
                 src="/sourceconnectlogo.webp"
                 alt="Source Connect Standard in Studio"
+                className="icon"
               />
-            </a>
+            </Link>
           </div>
-          <div>
-            <p>Voiceover is hard to get into.</p>
-            <p>
-              Our podcast interviews successful voice actors, asking
-              <em>
-                <strong>Voiceover: How Did You DO It??</strong>,
-              </em>
-              and how you can too. Listen in. It’s free!
-            </p>
-            <p>
-              <a href="http://voiceoverpodcast.com">
-                http://voiceoverpodcast.com
-              </a>
-            </p>
+
+          <div className="podcast-right">
+            <article className="podcast">
+              <div className="podcast-text">
+                <p className="pod-text">Voiceover is hard to get into.</p>
+                <p className="pod-text">
+                  Our podcast interviews successful voice actors, asking
+                  <em>
+                    <strong>Voiceover: How Did You DO It??</strong>,
+                  </em>
+                  and how you can too. Listen in. It’s free!
+                </p>
+                <p className="pod-text">
+                  <Link href="http://voiceoverpodcast.com" className="vop-link">
+                    http://voiceoverpodcast.com
+                  </Link>
+                </p>
+              </div>
+              <div>
+                <Link href="http://voiceoverpodcast.com" target="_blank">
+                  <Image
+                    width={145}
+                    height={145}
+                    alt="VoiceoverPodcast.com --answers to that question and more!"
+                    src="/HowDidYouDOIt.webp"
+                    className="icon"
+                  />
+                </Link>
+              </div>
+            </article>
           </div>
-          <div>
-            <a href="http://voiceoverpodcast.com" target="_blank">
-              <Image
-                width={630}
-                height={630}
-                alt="VoiceoverPodcast.com --answers to that question and more!"
-                src="/HowDidYouDOIt.jpg"
-              />
-            </a>
-          </div>
-        </div>
-        <a>
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Menu A
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Menu B
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Menu C
-        </a>
+        </section>
       </footer>
     </div>
   );
