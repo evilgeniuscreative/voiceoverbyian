@@ -96,22 +96,29 @@ body {
 }
 
 .main-section {
-  align-items: center;
+  align-content:stretch;
   background-color: var(--mainblue);
   border: 2px solid var(--foreground);
   display: flex;
   gap: 20px;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 3rem;
 }
 
 .main-left,
-.main-center,
 .main-right {
   background-color: #fefefe;
   border-radius: 3px;
   padding: 3rem;
+}
+
+.main-left{
+  flex-basis:50%;
+}
+.main-right{
+  flex-basis:45%;
 }
 
 .bottom-section {
