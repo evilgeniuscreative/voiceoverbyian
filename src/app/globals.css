@@ -28,12 +28,26 @@ body {
   @apply bg-blue-500 text-white rounded px-4 py-1;
 }
 
+.btn-control{
+  display:flex; 
+  justify-content: space-between;
+}
+
+.btn-pause{
+  @apply bg-lime-600 rounded px-4 py-1;
+}
+
 .dl{
   @apply bg-orange-300 text-black rounded px-4 py-2;
 }
 
+.timer {
+  text-align:center;
+  margin-left:-50px;
+}
 .demo{
- @apply bg-blue-900 text-white p-10;
+ @apply text-white p-5;
+ background: var(--mainblue);
 }
 
 .top-header section {
