@@ -1,8 +1,12 @@
 import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import AudioVisualzation from './components/AudioVisualzation';
 
 export default function Home() {
+
+
+  
   return (
     <div>
       <main className="flex flex-col items-center sm:items-start">
@@ -20,9 +24,12 @@ export default function Home() {
         <article className="main-right">
           <h2 className="text-4xl font-bold">Demos</h2>
           <p className="text-xl">Please have a listen to my demos to see what I can do for you.</p>
-          {/* 
-          Demo player
-          */}
+          {/*  Demo player */}
+          <p className='text-xl pb-10'>Commercial Demo</p>
+          <AudioVisualzation audioSrc='commercial'></AudioVisualzation>
+
+          <p className='text-xl pb-10'>Character / Game / Animation Demo</p>
+          <AudioVisualzation audioSrc='character'></AudioVisualzation>
         </article>
       </section>
       <section className="bottom-section text-4xl p-10 text-center">
