@@ -24,6 +24,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.btn {
+  @apply bg-blue-500 text-white rounded px-4 py-1;
+}
+
+.dl{
+  @apply bg-orange-300 text-black rounded px-4 py-2;
+}
+
+.demo{
+ @apply bg-blue-900 text-white p-10;
+}
+
 .top-header section {
   align-items: center;
   background-color: var(--background);
